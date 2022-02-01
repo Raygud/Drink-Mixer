@@ -40,7 +40,7 @@ void loop() {
      Clicked = !Clicked;
 }
 else {
-    // turn LED off:
+    // turn both pumps off:
     digitalWrite(Gin, LOW);
     digitalWrite(Mixer, LOW);
   }}
