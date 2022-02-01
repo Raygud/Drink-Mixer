@@ -1,7 +1,7 @@
 
 const int buttonPin = 2;     // the number of the pushbutton pin
-const int Gin =  13;      // the number of the LED pin
-const int Mixer =  12;      // the number of the LED pin
+const int Gin =  13;      // the number of the Gin pin
+const int Mixer =  12;      // the number of the Mixer pin
 
 bool Clicked = false;
 
@@ -9,7 +9,7 @@ bool Clicked = false;
 int buttonState = 0;         // variable for reading the pushbutton status
 
 void setup() {
-  // initialize the LED pin as an output:
+  // initialize the Gin/Mixer pins as an output:
   pinMode(Gin, OUTPUT);
   pinMode(Mixer, OUTPUT);
   // initialize the pushbutton pin as an input:
