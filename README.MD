@@ -9,6 +9,6 @@ note: make sure your tubes are going too the right location, had an unfortunate 
 
 ```
 // constants won't change. They're used here to set pin numbers:
-const int buttonPin = 2;     // the number of the pushbutton pin
+const int buttonPin = 2;     // the number of the pushbutton pin 
 const int ledPin =  13;      // the number of the LED pin, indicates the mixer is ready too pour.
 const int ledPin1 =  12;      // the number of the LED pin```
