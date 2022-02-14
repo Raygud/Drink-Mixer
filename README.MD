@@ -49,6 +49,11 @@ void setup() {
    pinMode(buttonPin, INPUT); // Pins are actualy set as INPUT by default, but im keeping this in for clarity.
    
    digitalWrite(ReadyLed, HIGH); // Turns on ReadyLed too indicate that the machine is ready too pour.
+   
+   // as unintuitive as it might sound setting the Mixer && Gin pins to HIGH will turn the of so here we are just making sure the pumps are turned of.
+   
+   digitalWrite(Mixer, HIGH);
+   digitalWrite(Gin, HIGH);
 }
 ```
 
