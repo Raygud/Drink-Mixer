@@ -60,4 +60,40 @@ void setup() {
 ____
 
 
+void loop() {
+  // read the state of the pushbutton value:
+  buttonState = digitalRead(buttonPin);
+  digitalWrite(Gin, HIGH);
+    digitalWrite(Mixer, HIGH);
+      
+  // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
+  if (buttonState == HIGH) {
+    // Switch Clicked state:
+    Clicked = !Clicked;
+  } else {
+    Serial.write("hello");
+  }
+  if (Clicked == true) {
+     digitalWrite(WorkingLed, HIGH);
+     digitalWrite(ReadyLed, LOW);
+     digitalWrite(Gin, LOW);
+     delay(2000);
+     digitalWrite(Gin, HIGH);
+     digitalWrite(Mixer, LOW);
+     delay(2000);
+     digitalWrite(Gin, HIGH);
+     digitalWrite(Mixer, HIGH);
+     digitalWrite(WorkingLed, LOW);
+     digitalWrite(ReadyLed, HIGH);
+     delay(1000);
+     
+     Clicked = !Clicked;
+}
+else {
+    // turn both pumps off:
+    digitalWrite(Gin, HIGH);
+    digitalWrite(Mixer, HIGH);
+  }}
+
+
 
