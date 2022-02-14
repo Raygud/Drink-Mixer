@@ -46,16 +46,13 @@ void setup() {
    
   // initialize the pushbutton pin as an input:
   
-   pinMode(buttonPin, INPUT);
+   pinMode(buttonPin, INPUT); // Pins are actualy set as INPUT by default, but im keeping this in for clarity.
    
    digitalWrite(ReadyLed, HIGH); // Turns on ReadyLed too indicate that the machine is ready too pour.
-   
-   // ***
-   
-   digitalWrite(Mixer, LOW); 
-   digitalWrite(Gin, LOW); 
 }
 ```
 
 ____
+
+
 
