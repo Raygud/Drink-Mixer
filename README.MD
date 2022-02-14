@@ -13,7 +13,9 @@ const int Mixer =  13;             // the number of the Mixer pin
 const int Gin =  12;              // the number of the Gin pin
 const int ReadyLed =  9;         // Indicates the machine is ready too pour
 const int WorkingLed =  8;      // Indicates the machine is currently pouring
-const int buttonPin = 2;            // the number of the pushbutton pin```
+const int buttonPin = 2;            // the number of the pushbutton pin
+```
+_____
 
 ```
 Button setup:
