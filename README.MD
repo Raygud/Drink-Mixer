@@ -15,7 +15,8 @@ const int ReadyLed =  9;         // Indicates the machine is ready too pour
 const int WorkingLed =  8;      // Indicates the machine is currently pouring
 const int buttonPin = 2;            // the number of the pushbutton pin```
 
-```Button setup:
+```
+Button setup:
    bool Clicked = false; // Says that the button is currently NOT pressed
    int buttonState = 0;         // variable for reading the pushbutton status, will change too 1 if pressed(bool)
 ```
