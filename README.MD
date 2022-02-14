@@ -5,7 +5,7 @@ ____
 
 2. Bigger pumps are needed, puming at 6 volts took 2min 40 seconds too fill the glass! bumping up the voltage too 9v(Stressings the pump) took 1min 20 seconds yilded a rather impressive 50% decrease in time.
 
-note: make sure your tubes are going too the right location, had an unfortunate experience with a rather powerful mix! 
+> > note: make sure your tubes are going too the right location, had an unfortunate experience with a rather powerful mix! 
 
  ## constants won't change. They're used here to set pin numbers:
 
