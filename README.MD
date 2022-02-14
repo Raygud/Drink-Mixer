@@ -7,8 +7,10 @@ Issues:
 
 note: make sure your tubes are going too the right location, had an unfortunate experience with a rather powerful mix! 
 
+ # constants won't change. They're used here to set pin numbers:
+
 ```
-// constants won't change. They're used here to set pin numbers:
+
 const int Mixer =  13;             // the number of the Mixer pin
 const int Gin =  12;              // the number of the Gin pin
 const int ReadyLed =  9;         // Indicates the machine is ready too pour
@@ -17,10 +19,43 @@ const int buttonPin = 2;            // the number of the pushbutton pin
 ```
 _____
 
+# Variables will change while program is running
+
 ```
 Button setup:
    bool Clicked = false; // Says that the button is currently NOT pressed
    int buttonState = 0;         // variable for reading the pushbutton status, will change too 1 if pressed(bool)
 ```
+____
 
+# Initial setup on start up, this code will run once when the program initionaly stars running.
+
+```
+void setup() {
+
+   Serial.begin(9600);// opens serial port, sets data rate to 9600 bps(Realy only used for testing)
+   
+   OUTPUT // Voltage will be set to the corresponding value: 5V (or 3.3V on 3.3V boards) for HIGH and 0V for LOW
+   
+   pinMode(Gin, OUTPUT); 
+   pinMode(Mixer, OUTPUT);
+   
+  // initialize the Gin/Mixer pins as an output:
+   pinMode(ReadyLed, OUTPUT);
+   pinMode(WorkingLed, OUTPUT);
+   
+  // initialize the pushbutton pin as an input:
+  
+   pinMode(buttonPin, INPUT);
+   
+   digitalWrite(ReadyLed, HIGH); // Turns on ReadyLed too indicate that the machine is ready too pour.
+   
+   // ***
+   
+   digitalWrite(Mixer, LOW); 
+   digitalWrite(Gin, LOW); 
+}
+```
+
+____
 
