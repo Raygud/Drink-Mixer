@@ -1,9 +1,9 @@
 # Arduino Gin&Tonic Mixer
 ____
 ## Issues: 
- 1: Pumping carbonated drinks is not a good idea! about half of the expected volum comes out and it comes out uncarbonated since the liquid and carbon get seperated in the small tube(dont know if the size of the tube makes any difference..)
+ 1. Pumping carbonated drinks is not a good idea! about half of the expected volum comes out and it comes out uncarbonated since the liquid and carbon get seperated in the small tube(dont know if the size of the tube makes any difference..)
 
-2: Bigger pumps are needed, puming at 6 volts took 2min 40 seconds too fill the glass! bumping up the voltage too 9v(Stressings the pump) took 1min 20 seconds yilded a rather impressive 50% decrease in time.
+2. Bigger pumps are needed, puming at 6 volts took 2min 40 seconds too fill the glass! bumping up the voltage too 9v(Stressings the pump) took 1min 20 seconds yilded a rather impressive 50% decrease in time.
 
 note: make sure your tubes are going too the right location, had an unfortunate experience with a rather powerful mix! 
 
